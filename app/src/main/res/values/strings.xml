@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SetiApp</string>
+    <string name="boton">Start</string>
+    <string name="txtViewCounter">Counter</string>
+    <string name="botonSumar">Add one</string>
+    <string name="botonRestar">Subtract one</string>
+    <string name="botonVibrar">Vibrate</string>
+    <string name="txtMilisegundosVibrar">Number of miliseconds:</string>
+</resources>
