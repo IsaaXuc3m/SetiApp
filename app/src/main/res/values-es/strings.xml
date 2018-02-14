@@ -5,5 +5,8 @@
     <string name="botonSumar">Suma uno</string>
     <string name="botonRestar">Resta uno</string>
     <string name="botonVibrar">Vibrar</string>
-    <string name="txtMilisegundosVibrar">N\'umero de milisegundos:</string>
+    <string name="txtMilisegundosVibrar">Número de milisegundos:</string>
+    <string name="BotonToast">Tuéstame</string>
+    <string name="botonIniciarServicio">Iniciar Servicio</string>
+    <string name="botonDetenerServicio">Parar Servicio</string>
 </resources>

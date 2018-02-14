@@ -1,12 +1,16 @@
 package com.example.setiapp;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.VibrationEffect;
 import android.os.Vibrator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Main2Activity extends AppCompatActivity
 {
@@ -27,12 +31,20 @@ public class Main2Activity extends AppCompatActivity
     {
         contador++;
         contadorText.setText("" + contador);
+        if(contador == 10)
+        {
+            activarReceiver();
+        }
     }
 
     public void botonRestar(View view)
     {
         contador--;
         contadorText.setText("" + contador);
+        if(contador == 10)
+        {
+            activarReceiver();
+        }
     }
 
     public void botonVibrar(View view)
@@ -40,5 +52,34 @@ public class Main2Activity extends AppCompatActivity
         //((Vibrator) getSystemService(VIBRATOR_SERVICE)).vibrate(VibrationEffect.createOneShot(150,10));
 
         ((Vibrator) getSystemService(VIBRATOR_SERVICE)).vibrate(Integer.parseInt(txtMili.getText().toString()));
+    }
+
+    public void botonToast(View view)
+    {
+        Context context = getApplicationContext();
+        Toast toast = Toast.makeText(context, "Toma tostada", Toast.LENGTH_SHORT);
+        toast.show();
+    }
+
+    public void activarReceiver()
+    {
+        Intent intent = new Intent(this,MyReceiver.class);
+        sendBroadcast(intent);
+        Log.i("Receiver","Intent Enviado");
+    }
+
+    public void botonPrintV(View view)
+    {
+        Log.v("tag","Mensaje");
+    }
+
+    public void botonPrintD(View view)
+    {
+        Log.d("tag","Mensaje");
+    }
+
+    public void botonPrintI(View view)
+    {
+        Log.i("tag","Mensaje");
     }
 }

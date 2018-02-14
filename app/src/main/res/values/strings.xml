@@ -5,5 +5,11 @@
     <string name="botonSumar">Add one</string>
     <string name="botonRestar">Subtract one</string>
     <string name="botonVibrar">Vibrate</string>
-    <string name="txtMilisegundosVibrar">Number of miliseconds:</string>
+    <string name="txtMilisegundosVibrar" translatable="false">Number of miliseconds:</string>
+    <string name="BotonToast">Toast Me</string>
+    <string name="botonIniciarServicio">Start Service</string>
+    <string name="botonDetenerServicio">Stop Service</string>
+    <string name="botonPrintV">PrintV</string>
+    <string name="botonPrintD">PrintD</string>
+    <string name="botonPrintI">PrintI</string>
 </resources>
