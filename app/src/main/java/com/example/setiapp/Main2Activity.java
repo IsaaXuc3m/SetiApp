@@ -82,4 +82,22 @@ public class Main2Activity extends AppCompatActivity
     {
         Log.i("tag","Mensaje");
     }
+
+    public void botonIniciarServicio(View view)
+    {
+        Intent intent = new Intent(this, ServicioIsaac.class);
+        startService(intent);
+    }
+
+    public void botonPararServicio(View view)
+    {
+        Intent intent = new Intent(this, ServicioIsaac.class);
+        stopService(intent);
+    }
+
+    public void botonAsincrono(View view)
+    {
+        TareaAsincrona tarea = new TareaAsincrona();
+        tarea.execute();
+    }
 }

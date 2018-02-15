@@ -16,6 +16,6 @@ public class MyReceiver extends BroadcastReceiver {
         //throw new UnsupportedOperationException("Not yet implemented");
         Toast toast = Toast.makeText(context, "Hemos llegado a 10, Viva la bida y biba el hamor", Toast.LENGTH_SHORT);
         toast.show();
-        Log.i("Receiver","Intent recibido");
+        Log.i("Receiver","Receiver funcionando");
     }
 }
